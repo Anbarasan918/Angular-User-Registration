@@ -1,0 +1,19 @@
+<div  class="user-list-background-color">
+  <table>
+      <tr class="text-color">
+          <th>Name</th>
+          <th>PhoneNO</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Password</th>
+      </tr>
+
+      <tr  class="text-color" *ngFor="let userlist of users">
+        <td>{{userlist.name}}</td>
+        <td>{{userlist.phoneNo}}</td>
+        <td>{{userlist.age}}</td>
+        <td>{{userlist.email}}</td>
+        <td>{{userlist.password}}</td>
+      </tr>
+  </table>
+</div>

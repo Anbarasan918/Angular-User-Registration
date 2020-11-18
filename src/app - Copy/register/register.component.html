@@ -1,0 +1,10 @@
+<div class="register-background-color">
+  <form>
+      <div>name<input [(ngModel)]="user.name" class="form-control" type="text" name="Name"></div>
+      <div>PhoneNo<input [(ngModel)]="user.phoneNo" class="form-control" type="number" name="PhoneNo"></div>
+      <div>Age<input [(ngModel)]="user.age" class="form-control" type="number" name="Age"></div>
+      <div>email<input [(ngModel)]="user.email" class="form-control" type="text" name="email"></div>
+      <div>Password<input [(ngModel)]="user.password" class="form-control" type="password" name="password"></div>
+      <button type="button" (click)="entrydata()">Add</button>
+  </form>
+</div>

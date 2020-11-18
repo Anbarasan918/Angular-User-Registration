@@ -1,0 +1,11 @@
+<div class="login-background-color">
+    <div class="innerdiv">
+        <div>EMAIL<input [(ngModel)]="loginEmail" class="form-control" type="email"></div>
+        <div>PASSWORD<input [(ngModel)]="loginPassword" class="form-control" type="pasasword"></div>
+        <button type="button" (click)="showdetails()" >LOGIN</button>
+    </div>
+    <div *ngIf="showError==false">{{showuserdetails.name}} {{showuserdetails.age}} {{showuserdetails.phoneNo}}</div>
+    <div *ngIf="showError==true">Pls enter valid email and password</div>
+    
+
+</div>
